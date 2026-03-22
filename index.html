@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WhyLens</title>
+    <link rel="stylesheet" href="assets/Style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <h2>WhyLens</h2>
+      <button class="nav-btn">Request Demo</button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Stop guessing why customers behave the way they do</h1>
+
+      <p class="sub">
+        WhyLens explains it. A reasoning layer that combines query, search, and
+        data relationships to uncover the drivers behind customer decisions.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="cta">Explore Product</button>
+        <button class="secondary">See Demo</button>
+      </div>
+    </section>
+
+    <!-- TRUST / TAGLINE -->
+    <section class="tagline">
+      <p>From dashboards → to reasoning → to decisions</p>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="section">
+      <h2>The Problem</h2>
+      <p>
+        Businesses track metrics like clicks and conversions, but lack clarity
+        on why those changes occur.
+      </p>
+      <div class="problem-box">
+        Conversion dropped by 15% — but the cause is unclear.
+      </div>
+    </section>
+
+    <!-- SOLUTION -->
+    <section class="section dark">
+      <h2>Introducing WhyLens</h2>
+      <p>
+        A reasoning layer that combines lookup, search, and relationship
+        analysis to explain customer behavior.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Query</h3>
+          <p>Precise answers from structured data</p>
+        </div>
+        <div class="card">
+          <h3>Search</h3>
+          <p>Pattern discovery across datasets</p>
+        </div>
+        <div class="card">
+          <h3>Traversal</h3>
+          <p>Relationships across users, events, and actions</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAT DEMO -->
+    <section class="section">
+      <h2>Ask WhyLens</h2>
+
+      <div class="chat">
+        <div class="user-msg">Why are customers not buying Product X?</div>
+
+        <button onclick="showReply()">Get Answer</button>
+
+        <div id="reply" class="bot-msg"></div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+      <h2>What You Get</h2>
+      <ul class="features-list">
+        <li>Explainable insights, not just metrics</li>
+        <li>Natural language interaction</li>
+        <li>Connected, cross-domain data</li>
+        <li>Faster, confident decision-making</li>
+      </ul>
+    </section>
+
+    <!-- USERS -->
+    <section class="section dark">
+      <h2>Built for Business Teams</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Marketing</h3>
+          <p>Understand campaign performance</p>
+        </div>
+        <div class="card">
+          <h3>Product</h3>
+          <p>Identify user drop-offs</p>
+        </div>
+        <div class="card">
+          <h3>Growth</h3>
+          <p>Optimize conversions</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Dashboards describe behavior. WhyLens explains it.</p>
+    </footer>
+
+    <script>
+      function showReply() {
+        document.getElementById("reply").innerText =
+          "Customers perceive pricing as high and show low trust based on review sentiment and competitor comparisons.";
+      }
+    </script>
+  </body>
+</html>
