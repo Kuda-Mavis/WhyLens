@@ -30,7 +30,11 @@ body {
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 800px;
+  margin: auto;
   background: linear-gradient(90deg, #7c5cff, #00c6ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -39,23 +43,38 @@ body {
 .sub {
   max-width: 600px;
   margin: 20px auto;
-  color: #aaa;
+  color: #bbb;
+  font-size: 18px;
 }
 
+.hero-buttons {
+  margin-top: 30px;
+}
+
+/* BUTTONS */
 .cta {
   padding: 14px 28px;
-  margin-top: 20px;
   border: none;
   border-radius: 10px;
   background: linear-gradient(135deg, #7c5cff, #00c6ff);
   color: white;
   font-size: 16px;
   cursor: pointer;
+  margin-right: 10px;
   transition: 0.3s;
 }
 
 .cta:hover {
   transform: scale(1.05);
+}
+
+.secondary {
+  padding: 14px 28px;
+  border-radius: 10px;
+  border: 1px solid #555;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
 }
 
 /* TAGLINE */
@@ -68,7 +87,7 @@ body {
 /* SECTIONS */
 .section {
   padding: 80px 20px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -81,7 +100,7 @@ body {
 .grid {
   display: flex;
   gap: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 /* CARDS */
@@ -143,45 +162,282 @@ footer {
   background: #0a0a14;
   color: #777;
 }
-.hero h1 {
-  font-size: 52px;
-  font-weight: 700;
-  line-height: 1.2;
-  max-width: 800px;
-  margin: auto;
 
-  background: linear-gradient(90deg, #7c5cff, #00c6ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* ========================= */
+/* CONTACT SECTION (FINAL) */
+/* ========================= */
+
+/* WRAPPER */
+.contact-wrapper {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto;
+  align-items: stretch;
 }
 
-.sub {
-  max-width: 600px;
-  margin: 20px auto;
-  color: #bbb;
-  font-size: 18px;
+/* LEFT CARD */
+.contact-card {
+  flex: 1;
+  padding: 35px;
+  border-radius: 18px;
+  background: linear-gradient(
+    145deg,
+    rgba(124, 92, 255, 0.12),
+    rgba(0, 198, 255, 0.08)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
-.hero-buttons {
-  margin-top: 30px;
+.contact-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.cta {
-  padding: 14px 28px;
-  border: none;
+.contact-sub {
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+/* INFO ITEMS */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: 0.3s;
+}
+
+.contact-item:hover {
+  transform: translateX(6px);
+  border-color: #7c5cff;
+  background: rgba(124, 92, 255, 0.08);
+}
+
+/* ICON (clean, no emoji) */
+.icon {
+  width: 36px;
+  height: 36px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #7c5cff, #00c6ff);
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  margin-right: 10px;
+  background: rgba(124, 92, 255, 0.15);
+  border: 1px solid rgba(124, 92, 255, 0.3);
 }
 
-.secondary {
-  padding: 14px 28px;
-  border-radius: 10px;
-  border: 1px solid #555;
-  background: transparent;
+/* TEXT */
+.contact-item span {
+  font-size: 12px;
+  color: #888;
+}
+
+.contact-value {
+  margin: 2px 0 0;
+  font-size: 15px;
+  font-weight: 600;
   color: #fff;
-  cursor: pointer;
+}
+
+/* FORM */
+.contact-form {
+  flex: 1;
+  padding: 35px;
+  border-radius: 18px;
+  background: #12121f;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form h3 {
+  margin-bottom: 20px;
+}
+
+/* INPUTS */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  color: #fff;
+  margin-top: 15px;
+  transition: 0.25s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #777;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #7c5cff;
+  box-shadow: 0 0 0 2px rgba(124, 92, 255, 0.25);
+}
+
+/* BUTTON */
+.contact-form .cta {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+}
+/* FORCE SAME FONT FOR INPUT + PLACEHOLDER */
+.contact-form input,
+.contact-form textarea {
+  font-family: "Inter", sans-serif;
+}
+
+/* PLACEHOLDER FONT FIX */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  font-family: "Inter", sans-serif;
+}
+/* FORM CONTAINER */
+.contact-form {
+  flex: 1;
+  padding: 35px;
+  border-radius: 18px;
+  background: #12121f;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* GRID FIX (VERY IMPORTANT) */
+.contact-form .grid {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.contact-form .grid input {
+  flex: 1;
+  margin-top: 0; /* remove stacking bug */
+}
+
+/* INPUTS */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box; /* FIXES OVERFLOW */
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  color: #fff;
+  margin-top: 15px;
+  transition: 0.25s;
+  font-family: "Inter", sans-serif;
+}
+
+/* TEXTAREA SPECIFIC */
+.contact-form textarea {
+  resize: none; /* cleaner look */
+}
+
+/* BUTTON */
+.contact-form .cta {
+  width: 100%;
+  margin-top: 20px;
+}
+.section.dark h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* SERVICES SECTION */
+.services h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.services-sub {
+  text-align: center;
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+}
+
+/* IMPROVE GRID SPACING */
+.services .grid {
+  gap: 25px;
+}
+
+/* MAKE CARDS FEEL MORE PREMIUM */
+.services .card {
+  text-align: left;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.services .card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(124, 92, 255, 0.4);
+  box-shadow: 0 20px 50px rgba(124, 92, 255, 0.1);
+}
+
+/* TITLE INSIDE CARD */
+.services .card h3 {
+  margin-bottom: 10px;
+}
+
+/* DESCRIPTION */
+.services .card p {
+  color: #bbb;
+  line-height: 1.6;
+}
+/* WHO WE ARE SECTION */
+.who h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* CONTENT BLOCK */
+.who-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TEXT STYLING */
+.who-content p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+/* ADD SUBTLE CARD EFFECT */
+.who-content {
+  padding: 30px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+}
+
+/* OPTIONAL HOVER (VERY SUBTLE) */
+.who-content:hover {
+  border-color: rgba(124, 92, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(124, 92, 255, 0.08);
+  transition: 0.3s;
 }
