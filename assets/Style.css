@@ -441,3 +441,101 @@ footer {
   box-shadow: 0 10px 30px rgba(124, 92, 255, 0.08);
   transition: 0.3s;
 }
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+/* TABLETS (iPads) */
+@media (max-width: 1024px) {
+  .section {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .grid {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 20px); /* 2 per row */
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* PHONES */
+@media (max-width: 600px) {
+  /* HERO */
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .sub {
+    font-size: 16px;
+  }
+
+  /* BUTTONS STACK */
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cta,
+  .secondary {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* SECTIONS */
+  .section {
+    padding: 50px 15px;
+  }
+
+  /* CARDS FULL WIDTH */
+  .card {
+    flex: 1 1 100%;
+  }
+
+  /* SERVICES TEXT */
+  .services-sub {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  /* WHO WE ARE */
+  .who-content {
+    padding: 20px;
+  }
+
+  .who-content p {
+    font-size: 15px;
+  }
+
+  /* CONTACT FORM GRID STACK */
+  .contact-form .grid {
+    flex-direction: column;
+  }
+
+  /* CONTACT CARD TEXT */
+  .contact-card {
+    padding: 25px;
+  }
+
+  /* INPUTS */
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+}
