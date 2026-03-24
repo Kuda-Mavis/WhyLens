@@ -783,3 +783,24 @@ footer {
     color: #bbb;
   }
 }
+/* MAKE WHO IDENTICAL TO SERVICES */
+.who .card {
+  text-align: left;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.who .card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(124, 92, 255, 0.4);
+  box-shadow: 0 20px 50px rgba(124, 92, 255, 0.1);
+}
+
+.who .card p {
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.who .grid {
+  gap: 25px;
+}
